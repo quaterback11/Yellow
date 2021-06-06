@@ -1,0 +1,519 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+/* font-family: 'Roboto', sans-serif; */
+body {
+  font: 15px/22px "Roboto", sans-serif;
+  font-weight: 400;
+  min-width: 1170px;
+}
+.header-wrapper {
+  width: 100%;
+  height: 100vh;
+  background: #89898b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 650px;
+}
+.logo {
+  display: block;
+  width: 89px;
+  height: 89px;
+}
+.intro {
+  height: 485px;
+  width: 645px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.intro h1 {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 400;
+  color: #ffff;
+  padding-top: 54px;
+  padding-bottom: 50px;
+}
+.intro strong {
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 300;
+  color: #ffe600;
+  line-height: 56px;
+  padding-bottom: 113px;
+}
+.button-wrapper {
+  height: 60px;
+  min-width: 230px;
+  background: #89898b;
+  border: 1px solid #ffe600;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffff;
+  font-weight: 400;
+  position: relative;
+}
+.button-wrapper span {
+  font: 15px/22px "Roboto", sans-serif;
+  font-size: 15px;
+}
+.icon-arrow-down-white::before {
+  position: absolute;
+  top: 90px;
+  left: calc(50% - 20px);
+}
+.white-wrapper {
+  width: 100%;
+  height: 720px;
+  background: #ffff;
+  position: relative;
+}
+.white-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 120px;
+  left: 0px;
+  width: 100%;
+  border-bottom: 1px solid yellow;
+}
+.main {
+  width: 1170px;
+  margin: auto;
+}
+.main-top {
+  width: 1170px;
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+}
+.logo-inner {
+  width: 605px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+}
+.logo-small {
+  height: 47px;
+  width: 47px;
+}
+.txt-img {
+  height: 50px;
+  width: 143px;
+  display: block;
+  padding-top: 16px;
+}
+nav {
+  width: 535px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 550px;
+}
+.menu li {
+  border: 1px solid transparent;
+}
+.menu li:hover {
+  border: 1px solid #ffe600;
+}
+.menu a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #8e8e8e;
+  display: block;
+  padding: 9px 21px 9px 20px;
+}
+#active {
+  border: 1px solid #ffe600;
+  color: #131316;
+}
+#active a {
+  color: #131316;
+}
+.menu a:hover {
+  color: #131316;
+}
+.heading {
+  text-transform: uppercase;
+  color: #131316;
+  font-size: 25px;
+  text-align: center;
+  padding-top: 120px;
+  padding-bottom: 25px;
+}
+.head-span {
+  text-transform: uppercase;
+  color: #ffe600;
+  font-size: 15px;
+  display: block;
+  text-align: center;
+  padding-bottom: 117px;
+}
+.main-act {
+  display: flex;
+  justify-content: space-between;
+}
+.activities {
+  width: 280px;
+  height: 120px;
+  padding-bottom: 165px;
+}
+.activities strong {
+  color: #ffe600;
+  font-size: 25px;
+  font-weight: 300;
+  border-right: 1px solid #ffe600;
+  padding-right: 15px;
+}
+.activities h3 {
+  color: #131316;
+  display: inline-block;
+  text-transform: uppercase;
+  padding-left: 15px;
+}
+.activities p {
+  color: #8e8e8e;
+  font-weight: 300;
+  padding-top: 50px;
+  line-height: 17px;
+}
+
+.yellow-wrapper {
+  width: 100%;
+  height: 600px;
+  background: #ffe600;
+}
+.main-yellow {
+  width: 1170px;
+  margin: auto;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main-yellow strong {
+  font-size: 25px;
+  color: #131316;
+  line-height: 40px;
+  font-weight: 300;
+  font-style: italic;
+}
+.main-yellow span {
+  color: #ffff;
+  text-transform: uppercase;
+}
+.photo-inner {
+  width: 1170px;
+  margin: auto;
+  height: 430px;
+}
+.photo-inner ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+.photo-inner li {
+  width: 270px;
+  height: 200px;
+  background: #f3f3f3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 26px;
+  position: relative;
+}
+.active-photo {
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  background: #ffe600;
+  display: none;
+  justify-content: center;
+  text-align: center;
+}
+.photo-inner li:hover .active-photo {
+  display: block;
+}
+.active-photo p {
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #131316;
+  line-height: 26px;
+  padding-top: 70px;
+}
+.active-photo span {
+  padding-top: 15px;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #ffff;
+}
+.more-info {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffe600;
+  margin-bottom: 160px;
+}
+.prev-link {
+  display: block;
+  text-align: center;
+  position: relative;
+  padding-top: 21px;
+  padding-bottom: 160px;
+}
+.icon-arrow-down-black::before {
+  position: absolute;
+  color: #000;
+  bottom: 117px;
+  left: 566px;
+}
+.black-wrapper {
+  width: 100%;
+  height: 500px;
+  background: #424245;
+}
+.black-wrapper h3 {
+  color: #ffff;
+}
+.clients ul {
+  display: flex;
+  justify-content: space-around;
+}
+.clients ul li {
+  padding-top: 24px;
+}
+.clients ul li a {
+  text-decoration: none;
+  font-size: 30px;
+}
+.clients ul li:last-child a {
+  font-size: 40px;
+}
+.title {
+  margin: auto;
+  width: 970px;
+  text-align: center;
+  margin-top: 114px;
+  text-transform: uppercase;
+  margin-bottom: 75px;
+}
+
+.title h3 {
+  color: #131316;
+  font-size: 24px;
+  padding-bottom: 26px;
+}
+
+.title span {
+  color: #ffe600;
+  font-size: 15px;
+  word-spacing: -1.9px;
+}
+.row-form {
+  width: 970px;
+  margin: auto;
+  margin-bottom: 17px;
+}
+.checkboxes {
+  float: left;
+  margin-right: 50px;
+}
+.radiobuttons {
+  float: right;
+  margin-right: 45px;
+}
+.row-radio-right {
+  padding-right: 79px;
+}
+.row-form-text {
+  width: 970px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.text-input,
+.text-input-wide {
+  width: 470px;
+  height: 50px;
+  background: #ffe600;
+  border: none;
+  padding: 20px;
+}
+.text-input:focus,
+.text-input-wide:focus {
+  outline: none;
+}
+.text-input::placeholder,
+.text-input-wide::placeholder {
+  color: #000;
+}
+.row-left {
+  float: left;
+}
+.row-right {
+  float: right;
+}
+.text-input-wide {
+  width: 100%;
+}
+.default-select {
+  width: 100%;
+  background: #ffe600;
+  border: none;
+  padding: 16px;
+  font-size: 15px;
+  line-height: 17px;
+  outline: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.select-wrapper {
+  position: relative;
+}
+.select-wrapper::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 11px 10px 0 10px;
+  border-color: #000000 transparent transparent transparent;
+  top: 22px;
+  right: 13px;
+  pointer-events: none;
+}
+.text-input-send {
+  width: 100%;
+
+  background: #131316;
+  border: none;
+}
+input[value="send"] {
+  text-transform: uppercase;
+  color: #ffe600;
+  cursor: pointer;
+}
+.custom-checkbox {
+  height: 18px;
+  width: 18px;
+  border: 2px solid #ffe600;
+  position: relative;
+  float: left;
+  margin-right: 3px;
+}
+.custom-checkbox::after {
+  display: none;
+}
+.custom-checkbox-input {
+  display: none;
+}
+.custom-checkbox-input label {
+  word-spacing: -3px;
+}
+.custom-checkbox-input:checked + label .custom-checkbox::after {
+  display: block;
+}
+.custom-radio {
+  height: 17px;
+  width: 17px;
+  border: 2px solid #ffe600;
+  border-radius: 50%;
+  position: relative;
+  float: left;
+  margin-right: 6px;
+}
+.custom-radio::after {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #ffe600;
+  display: none;
+}
+.custom-radio-input:checked + label .custom-radio::after {
+  display: block;
+}
+.custom-radio-input {
+  display: none;
+}
+.checkboxes .icon-square::before {
+  display: none;
+}
+.checkboxes .custom-checkbox-input:checked + label .icon-square::before {
+  display: block;
+  color: #ffe600;
+  position: relative;
+  font-size: 12px;
+  top: 1px;
+  left: 1px;
+}
+.select-wrapper {
+  margin-bottom: 28px;
+}
+footer {
+  margin-top: 232px;
+}
+.footer-wrapper {
+  background: #131316;
+  height: 100px;
+}
+.privacy {
+  padding-top: 50px;
+  float: left;
+}
+.footer-wrapper .privacy-link {
+  text-decoration: none;
+  color: #ffe600;
+  font-size: 13px;
+}
+input[type="text"],
+input[type="email"] {
+  font: 15px/17px "Roboto", sans-serif;
+  color: #000;
+}
+input[type="submit"] {
+  font: 20px/22px "Roboto", sans-serif;
+  padding: 15px;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  line-height: 20px;
+}
+.services {
+  padding-top: 50px;
+  float: right;
+}
+.services ul {
+  display: flex;
+}
+.info-footer {
+  width: 1170px;
+  margin: auto;
+}
+.services ul li {
+  padding-left: 35px;
+}
+.services ul li a {
+  text-decoration: none;
+  font-size: 15px;
+}
