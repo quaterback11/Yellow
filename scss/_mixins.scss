@@ -1,4 +1,4 @@
-@mixin textFont($fw, $fs, $lh, $color) {
+@mixin textArea($fw, $fs, $lh, $color) {
   font-weight: $fw;
   font-size: $fs;
   line-height: $lh;
