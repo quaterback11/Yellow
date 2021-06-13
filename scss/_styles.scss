@@ -141,36 +141,33 @@ header {
     position: fixed;
     left: 0px;
     top: 0px;
-    z-index: 9;
     width: 100%;
     height: 100vh;
     background: $backgroundGray2;
     transform: translate(-100%, 0);
     transition: transform 0.8s cubic-bezier(0.68, 0.085, 0.68, 0.53);
+    z-index: 1;
     @include media(">=992px") {
       position: static;
       flex-direction: row;
-      align-items: flex-end;
       height: auto;
       background: none;
       transform: none;
       transition: none;
-      justify-content: flex-end;
       max-width: 1170px;
       margin: auto;
     }
     li {
-      max-width: 992px;
-      height: 62px;
       min-height: 5px;
       display: flex;
-      margin: 12px 23px;
+      margin: 0px 23px;
       position: relative;
       a {
         display: block;
         text-align: center;
         text-decoration: none;
         text-transform: uppercase;
+        padding: 10px;
         @include textArea(600, 30px, 40px, $colorWhite);
         @include media(">=992px") {
           @include textArea(400, 15px, 20px, $colorGray);
@@ -181,35 +178,17 @@ header {
       }
       a:hover {
         color: $colorYellow;
+        border: 1px solid $colorYellow;
+        padding: 10px;
       }
-
-      a::before {
-        content: "";
-        position: absolute;
-        height: 40px;
-        width: calc(100% + 40px);
-        top: 0px;
-        left: -20px;
-        border: 1px solid #ffe600;
-        display: none;
-        @include media(">=992px") {
-          top: 11px;
-        }
-      }
-    }
-    li:hover > a::before {
-      display: inline-block;
-    }
-
-    @include media(">=992px") {
     }
   }
 
   .burger {
     width: 50px;
-    height: 46px;
+    height: 50px;
     background: $backgroundYellow;
-    border-radius: 4px;
+    border-radius: 10px;
     position: fixed;
     z-index: 10;
     top: 30px;
@@ -222,7 +201,7 @@ header {
       height: 4px;
       width: 40px;
       background: $colorBlack;
-      transition: all 0.2s ease-in-out;
+      transition: all 0.63s ease-in;
       &:first-child {
         top: 5px;
       }
@@ -256,9 +235,11 @@ header {
     }
     span:nth-child(2) {
       top: 40px;
+      transform: rotate(-180deg);
     }
     span:nth-child(3) {
-      top: 1px;
+      top: 3px;
+      transform: rotate(180deg);
     }
     span:last-child {
       transform: rotate(-90deg);
